@@ -1,0 +1,16 @@
+.picture-container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 70vh;
+    background: pink;
+
+
+    .picture-item1{
+        background: red;
+    }
+
+
+
+}
+

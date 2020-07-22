@@ -1,0 +1,1 @@
+<h1>Home page from react</h1>

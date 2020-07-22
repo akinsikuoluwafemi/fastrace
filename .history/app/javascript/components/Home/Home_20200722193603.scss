@@ -1,0 +1,21 @@
+.header-hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    height: 70vh;
+    background: #52A7DD;
+    // grid-gap: .2rem;
+    
+}
+
+.heading-img {
+    background-image: url('../../../assets/images/image6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.heading-text {
+    padding: 3rem;
+    margin: auto;
+
+}

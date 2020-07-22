@@ -1,0 +1,15 @@
+.header-hero {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    // grid-template-rows: repeat(5, 1fr);
+    height: 70vh;
+    background: pink;
+    grid-gap: .2rem;
+    background-image: url('../../../assets/images/bikehero.svg')
+
+
+    
+
+
+}
+

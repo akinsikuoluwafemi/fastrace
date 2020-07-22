@@ -1,0 +1,225 @@
+.picture-container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+    // background: pink;
+    grid-gap: .2rem;
+
+
+    .picture-item1{
+        background: red;
+        background-image: url('../../../assets/images/image1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column: 1/4;
+        grid-row: 1/3;
+        z-index: 1;
+    }
+     .picture-item2{
+        background: blue;
+         grid-column: 4/7;
+        grid-row: 1/2;
+        background-image: url('../../../assets/images/image2.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item3{
+        background: purple;
+         grid-column: 7/10;
+        grid-row: 1/2;
+        background-image: url('../../../assets/images/image3.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item4{
+        background: plum;
+         grid-column: 10/-1;
+        grid-row: 1/2;
+        background-image: url('../../../assets/images/image4.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item5{
+         
+        background: orange;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item6{
+        background: #206a5d;
+         grid-column: 3/6;
+        grid-row: 2/3;
+        background-image: url('../../../assets/images/image6.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item7{
+        background: #1f4068;
+        grid-column: 6/9;
+        grid-row: 2/3;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item8{
+        background: #ebecf1;
+        grid-column: 9/-1;
+        grid-row: 2/3;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item9{
+         grid-column: 1/3;
+        grid-row: 3/5;
+        background: #1b1c25;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item10{
+           grid-column: 3/5;
+        grid-row: 3/4;
+        background: #e3dfc8;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item11{
+         grid-column: 5/7;
+        grid-row: 3/4;
+        background: orange;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item12{
+         grid-column: 7/10;
+        grid-row: 3/5;
+        background: #6f4a8e;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+    }
+
+     .picture-item13{
+         grid-column: 10/-1;
+        grid-row: 3/4;
+        background:#221f3b;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item14{
+         grid-column: 3/5;
+        grid-row: 4/-1;
+        background: #ffdbc5;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item15{
+          grid-column: 5/8;
+        grid-row: 4/5;
+        background: #ffffdd;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item16{
+         grid-column: 8/11;
+        grid-row: 4/5;
+        background: #d3de32;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item17{
+         grid-column: 11/-1;
+        grid-row: 4/5;
+        background: #3b2e5a;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item18{
+         grid-column: 1/3;
+        grid-row: 5/-1;
+        background: #0f4c75;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item19{
+         grid-column: 3/6;
+        grid-row: 5/-1;
+        background: #7fdbda;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item20{
+         grid-column: 6/9;
+        grid-row: 5/-1;
+        background:#8fcfd1;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     .picture-item21{
+          grid-column: 9/-1;
+        grid-row: 5/-1;
+        background: #595238;
+        background-image: url('../../../assets/images/image5.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+
+}
+

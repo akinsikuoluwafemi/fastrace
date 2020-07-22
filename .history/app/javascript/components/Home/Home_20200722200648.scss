@@ -1,0 +1,40 @@
+.header-hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+    height: 70vh;
+    background: #52A7DD;
+    // grid-gap: .2rem;
+    background-image: url('../../../assets/images/image6.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.heading-img {
+    
+}
+
+.heading-text {
+    // padding: 3rem;
+    margin: auto;
+
+}
+
+.btn-hero {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+    align-items: center;
+}
+
+.btn-text {
+    font-weight: bold;
+}
+.card-width{
+    width: 20rem!important;
+}
+
+@media(max-width: 320px){
+    width: 18rem!important;
+
+}

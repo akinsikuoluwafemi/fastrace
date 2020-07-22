@@ -1,0 +1,97 @@
+.picture-container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 70vh;
+    background: pink;
+    // grid-gap: 1rem;
+
+
+    .picture-item1{
+        background: red;
+        
+    }
+     .picture-item2{
+        background: blue;
+    }
+
+     .picture-item3{
+        background: purple;
+    }
+
+     .picture-item4{
+        background: plum;
+    }
+
+     .picture-item5{
+        background: orange;
+    }
+
+     .picture-item6{
+        background: #206a5d;
+    }
+
+     .picture-item7{
+        background: #1f4068;
+    }
+
+     .picture-item8{
+        background: #ebecf1;
+    }
+
+     .picture-item9{
+        background: #1b1c25;
+    }
+
+     .picture-item10{
+        background: #e3dfc8;
+    }
+
+     .picture-item11{
+        background: orange;
+    }
+
+     .picture-item12{
+        background: #6f4a8e;
+    }
+
+     .picture-item13{
+        background:#221f3b;
+    }
+
+     .picture-item14{
+        background: #ffdbc5;
+    }
+
+     .picture-item15{
+        background: #ffffdd;
+    }
+
+     .picture-item16{
+        background: #d3de32;
+    }
+
+     .picture-item17{
+        background: #3b2e5a;
+    }
+
+     .picture-item18{
+        background: #0f4c75;
+    }
+
+     .picture-item19{
+        background: #7fdbda;
+    }
+
+     .picture-item20{
+        background:#8fcfd1;
+    }
+
+     .picture-item21{
+        background: #595238;
+    }
+
+
+
+}
+
