@@ -85,8 +85,10 @@ const Photos = () =>
 
 
             <div className=" container">
+                <div className>
+                    {pictures}
 
-                {pictures}
+                </div>
             </div>
 
             {loading ? <Spinner /> : null}

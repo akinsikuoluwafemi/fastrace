@@ -19,7 +19,7 @@ export default function Navigation() {
                 <Route exact path="/contest" component={Contest} />
                 <Route exact path="/riders" component={Riders} />
                 <Route exact path="/location" component={Location} />
-                <Route exact path="/photos" component={ImageList} />
+                <Route exact path="/photos" component={Photos} />
             </Switch>
         </Router>
     )
