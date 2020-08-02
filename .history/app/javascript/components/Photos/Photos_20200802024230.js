@@ -1,53 +1,48 @@
 import React, { useState, useEffect } from 'react'
 import './Photos.scss'
 import HeaderTime from '../HeaderTime/HeaderTime'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Spinner from '../Spinner/Spinner'
 
 
 
-const Photos = () =>
-{
+const Photos = () => {
 
     const [pictures, setPictures] = useState([])
     const [query, setQuery] = useState('cycling')
     const [perPage, setPerPage] = useState(5)
-    const [page, setPage] = useState(1)
+    const [page,setPage] = useState(1)
     const [totalPages, setTotalPages] = useState(null)
     const [loading, setLoading] = useState(true);
 
-    useEffect(() =>
-    {
+    useEffect(() => {
         loadPictures()
-    }, [])
-
-    const loadPictures = () =>
-    {
-
+    },[])
+    
+    const loadPictures = () => {
+           
         const flickrapikey = '162e01778853d65e29516a0b540192d9'
         const flickrsecret = 'fd337bc310818cbb'
-
+        
 
         fetch(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${flickrapikey}&tags=${query}&per_page=${perPage}&page=${page}&format=json&nojsoncallback=1`)
             .then(response => response.json())
-            .then((data) =>
-            {
-                let { pages, photo } = data.photos
-                let pics = photo.map((pic) =>
-                {
-                    let srcPath = `https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg`;
-                    return <img alt="" src={srcPath} />
-
+            .then((data) =>{
+                let {pages, photo} = data.photos
+                let pics = photo.map((pic) => {
+                   let srcPath = `https://farm${pic.farm}.staticflickr.com/${pic.server}/${pic.id}_${pic.secret}.jpg`;
+                        return <img alt="" src={srcPath} />
+ 
                 })
                 setPictures(pics)
                 setTotalPages(pages)
                 setLoading(false)
-
+            
             }).catch(err => alert(err))
         console.log(setPerPage(perPage + 5))
         console.log(pictures)
     }
-    console.log(`The total pages is: ${totalPages}`)
+    console.log(`The total pages is: ${totalPages}` )
 
     return (
         <div>
@@ -90,11 +85,8 @@ const Photos = () =>
             </div>
 
             {loading ? <Spinner /> : null}
-
-            {totalPages < 1 ? <div>There are no more pictures to load</div> :
-
-                <button onClick={loadPictures} className="btn btn-info">LoadMore</button>
-            }
+            
+            {totalPages < 1 ? <div>There are no more pictures to load</div> : null}
 
 
         </div>
